@@ -5,4 +5,4 @@ class LoginLocators:
     PASSWORD_INPUT = (By.ID, "password")
     SUBMIT_INPUT = (By.ID, "login")
     WELCOME_MESSAGE = (By.ID, "flash-popup")
-    ERROR_MESSAGE = ""
+    ERROR_MESSAGE = (By.ID, "flash-popup")

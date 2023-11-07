@@ -17,9 +17,6 @@ class RegisterPage(BasePage):
     def register_success_message(self):
         return self.driver.find_element(*self.locators.WELCOME_MESSAGE).is_displayed()
     
-    def register_error_message(self):
-        return self.driver.find_element(*self.locators.ERROR_MESSAGE).is_displayed()
-    
     def open(self):
         super().open(REGISTRATION_URL) 
   

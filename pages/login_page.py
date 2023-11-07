@@ -16,9 +16,6 @@ class LoginPage(BasePage):
     def login_success_message(self):
         return self.driver.find_element(*self.locators.WELCOME_MESSAGE).is_displayed()
     
-    def login_fail_message(self):
-        return self.driver.find_element(*self.locators.ERROR_MESSAGE).is_displayed()
-    
     def open(self):
         super().open(LOGIN_URL)
     

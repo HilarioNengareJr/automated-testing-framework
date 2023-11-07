@@ -5,6 +5,7 @@ from conftest import driver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.common.exceptions import TimeoutException
 
 @pytest.mark.register
 def test_successful_register(driver):  
@@ -33,6 +34,8 @@ def test_fail_register(driver):
             register_page.locators.WELCOME_MESSAGE
             )
         )
-    except Exception as e:
-        print(f"successful fail {e}")
     
+    except TimeoutException:
+        print('Successful Failure')
+    
+    assert not register_page.register_success_message()
