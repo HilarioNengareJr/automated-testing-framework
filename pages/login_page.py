@@ -14,7 +14,7 @@ class LoginPage(BasePage):
         self.driver.find_element(*self.locators.SUBMIT_INPUT).click()
     
     def login_success_message(self):
-        return self.driver.find_element(*self.locators.WELCOME_MESSAGE).is_displayed()
+        return self.driver.find_element(*self.locators.PROPERTIES_PAGE).is_displayed()
     
     def open(self):
         super().open(LOGIN_URL)

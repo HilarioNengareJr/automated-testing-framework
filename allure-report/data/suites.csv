@@ -1,0 +1,7 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"failed","Mon Dec 04 13:14:07 TRT 2023","Mon Dec 04 13:14:23 TRT 2023","16263","tests","test_login","","","","test_successful_login",""
+"broken","Mon Dec 04 13:15:07 TRT 2023","Mon Dec 04 13:15:07 TRT 2023","21","tests","test_register","","","","test_fail_register",""
+"failed","Mon Dec 04 13:14:23 TRT 2023","Mon Dec 04 13:14:36 TRT 2023","12943","tests","test_login","","","","test_login_fail",""
+"broken","Mon Dec 04 13:14:46 TRT 2023","Mon Dec 04 13:15:07 TRT 2023","20639","tests","test_register","","","","test_successful_register",""
+"passed","Mon Dec 04 13:13:06 TRT 2023","Mon Dec 04 13:13:40 TRT 2023","33922","tests","test_home_page","","","","test_search_home","This search attempts to query property data./n/nThe output is a list of properties accorded to the query."
+"broken","Mon Dec 04 13:13:41 TRT 2023","Mon Dec 04 13:13:57 TRT 2023","16158","tests","test_home_page","","","","test_enquire_message","This search attempts to send an enquiry with simulated User Feedback./n/nOutput is a success message."

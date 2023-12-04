@@ -6,4 +6,3 @@ class RegisterLocators:
     PASSWORD_INPUT = (By.ID, 'password')
     SUBMIT_INPUT = (By.ID, 'sign-up')
     WELCOME_MESSAGE = (By.ID, 'flash-popup')
-    ERROR_MESSAGE = (By.ID, 'flash-popup')

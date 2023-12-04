@@ -13,7 +13,8 @@ class HomePage(BasePage):
         self.driver.find_element(*self.locators.FIND_INPUT).click()
     
     def enquiry(self, email, subject, message):
-        self.driver.find_element(*self.locators.OPEN_MESSAGE_MODAL).click()
+        button = self.driver.find_element(*self.locators.OPEN_MESSAGE_MODAL)
+        self.driver.execute_script("arguments[0].click();", button)
         self.driver.find_element(*self.locators.EMAIL_FIELD).send_keys(email)
         self.driver.find_element(*self.locators.SUBJECT_FIELD).send_keys(subject)
         self.driver.find_element(*self.locators.MESSAGE_BOX).send_keys(message)
